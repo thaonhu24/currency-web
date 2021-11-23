@@ -145,3 +145,6 @@
     outline: 1px solid #c6c6c6;
     outline-offset: -15px;
 }
+.border-top{
+    border-top: #20bf55 1px solid !important;
+}
