@@ -85,6 +85,61 @@
 .load-data{
     background:#adb5bd
 }
+#previous-rv{
+    left:25%;
+    top:70%;
+    cursor:pointer;
+}
+#next-rv{
+    right: 25%;
+    top:70%;
+    cursor:pointer;
+}
+.user-review {
+    background: #a3cef1;
+}
+.user-review-item:not(:first-child) {
+    /* Hide all images except the first */
+    display: none;
+}
+
+.rv-content{
+    color: #666666;
+    text-shadow: 0 0 2px #ccc;
+    /* height: 5.5rem; */
+}
+.fw-medium{
+    font-weight:600;
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .img-currency {
+        width: 58px;
+        height: 60px;
+    }
+    .fs-sm{
+        font-size: 20px !important;
+    }
+    .fs-sm-min{
+        font-size: 10px !important;
+    }
+    .list-review{
+        min-width: 500px;
+    }
+    .rv-content{
+        /* height: 6.5rem; */
+    }
+    .user-info{
+        width: 40% !important;
+    }
+}
+@media (max-width: 575px){
+    .list-review{
+        width:95% !important;
+    }
+    .user-info{
+        width: 40% !important;
+    }
+}
 
 .outline_chart {
     outline: 1px solid #c6c6c6;

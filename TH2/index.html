@@ -44,15 +44,18 @@
         </div>
     </nav>
     <div id="content" class="row bg-grey">
-        <div class="main-content col-lg-9 px-5 py-4">
-            <p class="text-danger bg-opacity-25 bg-danger ps-3 py-2">Hệ thống phát hiện các hoạt động bất thường liên quan đến tài khoản của bạn. Vui lòng <b>kiểm tra ngay</b> nhật ký hoạt động</p>
+        <div class="main-content col-md-9  px-lg-5 px-3 py-4">
+            <p class="text-danger bg-opacity-25 bg-danger px-3 py-2">Hệ thống phát hiện các hoạt động bất thường liên quan đến tài khoản của bạn. Vui lòng <b>kiểm tra ngay</b> nhật ký hoạt động</p>
             <div class="price-current">
                 <p>Tỉ lệ giá hiện tại</p>
-                <div class="row row-cols-3">
-                    <div class="col-4 pe-5">
+                <div class="row row-cols-2 row-cols-sm-3">
+                    <div class="col-sm-4 pe-md-5 pe-1">
                         <div class="currency bg-white d-flex">
                             <div class="img-currency text-center" style="background-color: #6B8088;"><img class="" src="./image/dollar.png" alt=""></div>
                             <div class="inf-currency ps-2 ">
+                                <p class="fs-sm-min m-0 fs-12 fw-bold">USD</p>
+                                <p id='id_display_latest_USD' class="m-0 fs-4 fs-sm fw-bold"><span>vnd</span></p>
+                                <p class="fs-sm-min m-0 fs-12 fw-bold text-green">+232</p>
                                 <p class="m-0 fs-12 fw-bold">USD</p>
                                 <div class="d-flex align-items-end fw-bold">
                                     <p id='id_display_latest_USD' class="m-0 fs-4 fw-bold"></p>
@@ -62,10 +65,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 pe-5">
+                    <div class="col-sm-4 pe-md-5 pe-1">
                         <div class="currency bg-white d-flex">
                             <div class="img-currency bg-danger text-center"><img class="" src="./image/pound.png" alt=""></div>
                             <div class="inf-currency ps-2 ">
+                                <p class="fs-sm-min m-0 fs-12 fw-bold">GBP</p>
+                                <p id="id_display_latest_GBP" class="m-0 fs-4 fs-sm fw-bold"></p>
+                                <p class="fs-sm-min m-0 fs-12 fw-bold text-danger">-145</p>
                                 <p class="m-0 fs-12 fw-bold">GBP</p>
                                 <div class="d-flex align-items-end fw-bold">
                                     <p id="id_display_latest_GBP" class="m-0 fs-4"></p>
@@ -75,10 +81,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-4 mt-sm-0 mt-2">
                         <div class="currency bg-white d-flex">
                             <div class="img-currency bg-green text-center"><img class="" src="./image/euro.png" alt=""></div>
                             <div class="inf-currency ps-2 ">
+                                <p class="fs-sm-min m-0 fs-12 fw-bold">EUR</p>
+                                <p id="id_display_latest_EUR" class="m-0 fs-4 fs-sm fw-bold"></p>
+                                <p class="fs-sm-min m-0 fs-12 fw-bold text-green">+140</p>
                                 <p class="m-0 fs-12 fw-bold">EUR</p>
                                 <div class="d-flex align-items-end fw-bold">
                                     <p id="id_display_latest_EUR" class="m-0 fs-4"></p>
@@ -95,8 +104,8 @@
                 <canvas id="myChart" width="400" height="400"></canvas>
             </div>
         </div>
-        <div class="col-right col-lg-3 py-4 px-3">
-            <input type="search" class="border-1 w-100 input-sx" placeholder="Tìm kiếm">
+        <div class="col-right col-md-3 py-4 px-3">
+            <input type="search" class="border-1 w-100 input-s" placeholder="Tìm kiếm">
             <div class="list-notify bg-white py-1 mt-3">
                 <div class="d-flex px-3 my-3">
                     <div class="img-notify col-2 pe-1">
@@ -202,11 +211,56 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid py-3" style="background-color: #f0f3f7;">
-        <div class="py-3 border-top border-success border-3 mx-5">
-            <span>2020. All Righes Resered</span>
-        </div>   
-    </div>
+    <div class="user-review  py-5 text-center position-relative">
+        <h2 class="fs-2 mt-4 fw-bold text-noto-b text-center">chia sẻ từ bạn bè</h2>
+        <div class="list-review position-relative overflow-hidden w-50 m-auto">
+            <div class="user-review-item" id="rv-1">
+                <p class="rv-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem velit, ipsa veritatis minima omnis mollitia quaerat rem similique iusto cum perspiciatis repellat facilis magni ab dolore fugit esse sunt totam.
+                </p>
+                <div class="user-info w-25 m-auto d-flex">
+                    <div class="img-user col-3">
+                        <img class="w-100" src="./image/user-1.jpg" alt="">
+                    </div>
+                    <div class="name-user ps-2 text-start">
+                        <p class="text-noto-b m-0 fw-medium">Mei</p>
+                        <p class="text-danger text-noto-re fs-14">Front-end Dev</p>
+                    </div>
+                </div>
+            </div>
+            <div class="user-review-item" id="rv-2">
+                <p class="rv-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem velit, ipsa veritatis minima omnis mollitia quaerat rem similique iusto cum perspiciatis repellat facilis magni ab dolore fugit esse sunt totam.
+                </p>
+                <div class="user-info w-25 m-auto d-flex">
+                    <div class="img-user col-3">
+                        <img class="w-100" src="./image/user-2.jpg" alt="">
+                    </div>
+                    <div class="name-user ps-2 text-start">
+                        <p class="text-noto-b m-0 fw-medium">Tương</p>
+                        <p class="text-danger text-noto-re fs-14">Front-end Dev</p>
+                    </div>
+                </div>
+            </div>
+            <div class="user-review-item" id="rv-3">
+                <p class="rv-content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis officia mollitia deleniti cum veritatis laudantium, dicta dolorem nam nulla, molestias nihil doloremque recusandae tenetur! Quam officiis debitis quae delectus. Eum cumque deserunt quidem sit, debitis iure dolor? Ratione, eveniet hic?
+                </p>
+                <div class="user-info w-25 m-auto d-flex">
+                    <div class="img-user col-3">
+                        <img class="w-100" src="./image/user-1.jpg" alt="">
+                    </div>
+                    <div class="name-user ps-2 text-start">
+                        <p class="text-noto-b m-0 fw-medium">jii Ann</p>
+                        <p class="text-danger text-noto-re fs-14">Front-end Dev</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-btn-review d-inline px-2 position-absolute" id="previous-rv">&#10094;</div>
+        <div class="nav-btn-review d-inline px-2 position-absolute" id="next-rv">&#10095;</div>
+  </div>
+
     <!-- Vendor Script Files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
