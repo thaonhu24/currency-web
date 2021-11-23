@@ -1,0 +1,69 @@
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.navbar-light .navbar-brand{
+    color:#fff;
+    border: #fff 1px solid;
+    padding: 0px 8px;
+    border-radius: 5px;
+    width: 30px;
+    height:30px;
+}
+.navbar{
+    background:#013a63;
+    padding:0;
+}
+.navbar-nav li a{
+    color: #fff !important;
+    padding: 5px 10px;
+    
+}
+.navbar-nav li .choose{
+    border-radius: 6px;
+    border: #fcf300 1px solid;
+    color: #fcf300 !important;
+}
+.navbar-nav>li {
+    padding: 10px 5px;
+}
+.num-noti{
+    background:#f4a261;
+    right: 4px;
+    color: #fff;
+    font-size:10px;
+    padding: 0 2px;
+    border-radius: 3px;
+}
+@media(max-width: 576px){
+    .navbar-nav li .choose{
+        border-radius: 0;
+        border: 0;
+        color: #fff !important;
+    }
+}
+.img-currency{
+    width:80px;
+    height:80px;
+    padding:9%;
+}
+.img-currency img{
+    width:30px;
+}
+.bg-green{
+    background:#14cb5d;
+}
+.fs-12{
+    font-size:12px;
+}
+.text-green{
+    color:#14cb5d;
+}
+.currency{
+    box-shadow: 1px 1px 4px #ccc;
+}
+.row{
+    --bs-gutter-x: 0rem;
+}
