@@ -30,6 +30,7 @@ async function fetchExchangeRate(){
     await fetch('https://api.exchangerate.host/timeseries?start_date=2020-11-19&end_date=2020-11-23&base=USD')
     .then(res => res.json())
     .then(data => {
+        console.log(data)
         for(property in data['rates']){
             for(sub_property in data['rates'][property]){
                 if(sub_property == 'VND'){
@@ -64,38 +65,38 @@ async function fetchExchangeRate(){
         data: {
             labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
             datasets: [{
-                label: '# of Votes',
+                label: 'USD',
                 data: array_USD,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0)',
+                    'rgba(107, 128, 104, 0)',
                     
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
+                    'rgba(107, 128, 104, 1)',
                 ],
                 borderWidth: 1
             },
             {
-                label: '# of Votes',
+                label: 'GBP',
                 data: array_GBP,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0)',
+                    'rgba(220, 53, 69, 0)',
                     
                 ],
                 borderColor: [
-                    'rgba(255, 159, 64, 1)'
+                    'rgba(220, 53, 69, 1)'
                 ],
                 borderWidth: 1
             },
             {
-                label: '# of Votes',
+                label: 'EUR',
                 data: array_EUR,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0)',
+                    'rgba(20, 203, 93, 0)',
                     
                 ],
                 borderColor: [
-                    'rgba(153, 102, 255, 1)'
+                    'rgba(20, 203, 93, 1)'
                 ],
                 borderWidth: 1
             }
