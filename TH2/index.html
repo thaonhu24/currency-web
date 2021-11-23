@@ -21,11 +21,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="nav navbar-nav">
-                <li><a class="nav-item nav-link" href="#">TRANG CHỦ</a></li>
-                <li><a class="choose active nav-item nav-link" href="#">NGOẠI TỆ</a></li>
-                <li><a class="nav-item nav-link" href="#">CHỨNG KHOÁNG</a></li>
-                <li><a class="nav-item nav-link" href="#">TIN TỨC</a></li>
-                <li><a class="nav-item nav-link" href="#">LIÊN HỆ</a></li>
+                    <li><a class="nav-item nav-link" href="#">TRANG CHỦ</a></li>
+                    <li><a class="choose active nav-item nav-link fw-bold" href="#">NGOẠI TỆ</a></li>
+                    <li><a class="nav-item nav-link" href="#">CHỨNG KHOÁNG</a></li>
+                    <li><a class="nav-item nav-link" href="#">TIN TỨC</a></li>
+                    <li><a class="nav-item nav-link" href="#">LIÊN HỆ</a></li>
                 </ul>
                 <ul class="nav navbar-nav ms-auto">
                 <li>
@@ -38,7 +38,7 @@
                         <img class="icon" src="./image/email.png" alt="">
                         <span class="num-noti top-0 position-absolute bg-success">5</span>
                     </a>
-                <a href="#" class="choose text-decoration-none">Logout</a></li>
+                <a href="#" class="choose text-decoration-none fw-bold">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -51,11 +51,17 @@
                 <div class="row row-cols-2 row-cols-sm-3">
                     <div class="col-sm-4 pe-md-5 pe-1">
                         <div class="currency bg-white d-flex">
-                            <div class="img-currency bg-green text-center"><img class="" src="./image/dollar.png" alt=""></div>
+                            <div class="img-currency text-center" style="background-color: #6B8088;"><img class="" src="./image/dollar.png" alt=""></div>
                             <div class="inf-currency ps-2 ">
                                 <p class="fs-sm-min m-0 fs-12 fw-bold">USD</p>
                                 <p id='id_display_latest_USD' class="m-0 fs-4 fs-sm fw-bold"><span>vnd</span></p>
                                 <p class="fs-sm-min m-0 fs-12 fw-bold text-green">+232</p>
+                                <p class="m-0 fs-12 fw-bold">USD</p>
+                                <div class="d-flex align-items-end fw-bold">
+                                    <p id='id_display_latest_USD' class="m-0 fs-4 fw-bold"></p>
+                                    <span class="ms-1">vnd</span>
+                                </div>
+                                <p class="m-0 fs-12 fw-bold text-green">+232</p>
                             </div>
                         </div>
                     </div>
@@ -66,6 +72,12 @@
                                 <p class="fs-sm-min m-0 fs-12 fw-bold">GBP</p>
                                 <p id="id_display_latest_GBP" class="m-0 fs-4 fs-sm fw-bold"></p>
                                 <p class="fs-sm-min m-0 fs-12 fw-bold text-danger">-145</p>
+                                <p class="m-0 fs-12 fw-bold">GBP</p>
+                                <div class="d-flex align-items-end fw-bold">
+                                    <p id="id_display_latest_GBP" class="m-0 fs-4"></p>
+                                    <span class="ms-1">vnd</span>
+                                </div>
+                                <p class="m-0 fs-12 fw-bold text-danger">-145</p>
                             </div>
                         </div>
                     </div>
@@ -76,12 +88,19 @@
                                 <p class="fs-sm-min m-0 fs-12 fw-bold">EUR</p>
                                 <p id="id_display_latest_EUR" class="m-0 fs-4 fs-sm fw-bold"></p>
                                 <p class="fs-sm-min m-0 fs-12 fw-bold text-green">+140</p>
+                                <p class="m-0 fs-12 fw-bold">EUR</p>
+                                <div class="d-flex align-items-end fw-bold">
+                                    <p id="id_display_latest_EUR" class="m-0 fs-4"></p>
+                                    <span class="ms-1">vnd</span>
+                                </div>
+                                <p class="m-0 fs-12 fw-bold text-green">+140</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="chart bg-white p-5 mt-5">
+            <div class="chart bg-white py-4 px-5 mt-5 outline_chart">
+                <p class="fs-3 fw-bold">Tỉ giá ngoại tệ</p>
                 <canvas id="myChart" width="400" height="400"></canvas>
             </div>
         </div>
@@ -120,6 +139,75 @@
                 <p class="fs-3 fw-bold">đang tải dữ liệu</p>
                 <img class="icon mb-4" src="./image/loading.png" alt="">
                 <img src="./image/phone.jpeg" class="w-100" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Advertisement -->
+    <div class="container py-3">
+        <p class="text-center fw-bold fs-3 mb-4">Quảng cáo</p>
+        <div class="row mx-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 85%;">
+                    <div style="width: 100%; height:230px;">
+                        <img src="./image/television.png" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">TV Samsung</h5>
+                      <p class="card-text mt-2">
+                          <span class="text-danger">$1200</span>
+                          <span class="text-decoration-line-through text-secondary">$1500</span>
+                          <span class="text-success">35% Off</span>
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 85%;">
+                    <div style="width: 100%; height: 230px;">
+                        <img src="./image/phone.jpg" class="card-img-top" alt="" style="height: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphone Samsung</h5>
+                        <p class="card-text mt-2">
+                            <span class="text-danger">$1200</span>
+                            <span class="text-decoration-line-through text-secondary">$1500</span>
+                            <span class="text-success">35% Off</span>
+                        </p>
+                    </div>
+                </div>                    
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 85%;">
+                    <div style="width: 100%; height: 230px;">
+                        <img src="./image/laptop.jpg" class="img-fluid" alt="" style="height: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Samsung</h5>
+                        <p class="card-text mt-2">
+                            <span class="text-danger">$1200</span>
+                            <span class="text-decoration-line-through text-secondary">$1500</span>
+                            <span class="text-success">35% Off</span>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: 85%;">
+                    <div style="width: 100%; height: 230px;">
+                        <img src="./image/smart_watch.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Smart-watch Samsung</h5>
+                        <p class="card-text mt-2">
+                            <span class="text-danger">$1200</span>
+                            <span class="text-decoration-line-through text-secondary">$1500</span>
+                            <span class="text-success">35% Off</span>
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
