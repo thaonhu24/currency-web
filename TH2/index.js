@@ -112,3 +112,36 @@ async function fetchExchangeRate(){
         }
     });
 }
+jQuery(document).ready(function($){
+// Slide review người dùng The Wall
+    $('#previous-rv').on('click', function(){
+        // Change to the previous Review
+            $('#rv-' + currentReview).hide();
+            decreaseReview();
+            $('#rv-' + currentReview).show();
+            });
+            $('#next-rv').on('click', function(){
+            // Change to the next Review
+            $('#rv-' + currentReview).hide();
+            increaseReview();
+            $('#rv-' + currentReview).show();
+        });
+        var currentReview = 1;
+        var totalReviews = 3;
+        function increaseReview() {
+            ++currentReview;
+            if(currentReview > totalReviews) {
+                currentReview = 1;
+            }
+        }
+        function decreaseReview() {
+
+            --currentReview;
+            if(currentReview < 1) {
+                currentReview = totalReviews;
+            }
+        }
+        window.setInterval(function() {
+            $('#previous-rv').click();
+        }, 5000);
+    })
